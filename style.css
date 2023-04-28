@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* min body height */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 15px;
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(212, 45%, 89%);
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+.card-bg {
+  width: 300px;
+  height: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 100%);
+}
+.card-bg img {
+  border-radius: 10px;
+}
+.card-bg .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-bg .text .main-text {
+  margin: 20px;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.card-bg .text .side-text {
+  margin: 0 20px;
+  font-size: 0.9rem;
+  color: hsl(220, 15%, 55%);
+}
+
+/*# sourceMappingURL=style.css.map */
